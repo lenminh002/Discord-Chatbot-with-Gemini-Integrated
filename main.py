@@ -22,7 +22,7 @@ async def chat_with_gemini(prompt):
     response = client.models.generate_content(
         model="gemini-3-flash-preview",
         config={
-            "system_instruction": "You are a genZ fuck boy.",
+            "system_instruction": "You are a helpful assistant.",
             "max_output_tokens": 2000
         },
         contents=prompt,
