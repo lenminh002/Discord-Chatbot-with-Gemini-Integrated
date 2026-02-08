@@ -47,22 +47,13 @@ async def on_member_remove(member):
 
 @bot.event
 async def on_message(message):
-    # Lmao UserID
-    specialMember1 = message.guild.get_member(338993997060112395) 
-    # My UserID
-    specialMember2 = message.guild.get_member(703141119554355210)
+
     if message.author == bot.user:
         return
-
 
     if 'help' in message.content.lower():
         await message.channel.send(f"Hello {message.author.mention}, how can I assist you? Ping {bot.user.mention} hello to get started!")
     
-    elif 'who is the gayest person that is ever existed' in message.content.lower():
-        await message.channel.send(f"That would be {specialMember1.mention}!")
-    
-    elif 'who is the most handsome man here' in message.content.lower():
-        await message.channel.send(f"That would be {specialMember2.mention}!")
 
     else:
         try:
@@ -71,6 +62,7 @@ async def on_message(message):
                 await message.channel.send(gemini_response)
         except Exception as e:
             print(f"Error with Gemini API: {e}")
+            await message.channel.send(f"Error with Gemini API: {e}")
 
 
     await bot.process_commands(message)
