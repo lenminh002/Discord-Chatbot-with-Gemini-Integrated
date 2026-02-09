@@ -1,5 +1,3 @@
-from email import message
-from urllib import response
 import discord
 from discord.ext import commands
 import logging
@@ -7,7 +5,6 @@ from dotenv import load_dotenv
 import os
 
 from google import genai
-from google.api_core import exceptions
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
