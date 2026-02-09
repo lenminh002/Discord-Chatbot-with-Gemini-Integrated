@@ -47,7 +47,8 @@ async def chat_with_gemini(prompt):
     ai_text = response.text.strip()
 
     if(len(ai_text) > 2000):
-        return chat_with_gemini("The previous response exceeded the character limit. Please provide a concise summary of the previous answer.")
+        redo_prompt = "The previous response exceeded the character limit. Please provide a concise summary of the previous answer."
+        return chat_with_gemini(redo_prompt)
 
     # add AI response to the message array
     message_array.append({

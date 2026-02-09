@@ -1,0 +1,4 @@
+[2026-02-09 14:35:15] [INFO    ] discord.client: logging in using static token
+[2026-02-09 14:35:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d3144f824f3f79196ad761ef493966ce).
+[2026-02-09 14:36:43] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "can" is not found
