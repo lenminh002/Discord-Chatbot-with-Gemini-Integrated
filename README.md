@@ -1,0 +1,1 @@
+Add gemini api key and discord token into .env to work

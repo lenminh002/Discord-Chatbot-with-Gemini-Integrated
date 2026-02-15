@@ -94,7 +94,6 @@ async def on_message(message):
                 await message.channel.send(f"{bot.user.mention} is thinking...")
                 bot_response = await chat_with_gemini(prompt)
                 await message.channel.send(bot_response)
-
             except Exception as e:
                 if "429" in str(e):
                     print("Rate limit exceeded (429).")
