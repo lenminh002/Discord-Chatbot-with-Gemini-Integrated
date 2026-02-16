@@ -10,6 +10,6 @@
 1. Download all the file
 2. Create .env file and add gemini api key and discord token into .env to work
 3. Run commands:
-    1. run: docker build -t smart_discord_bot .
-    2. run: docker run --env-file .env smart_discord_bot
+    1. docker build -t smart_discord_bot .
+    2. docker run --env-file .env smart_discord_bot
 
