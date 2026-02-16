@@ -23,6 +23,3 @@ COPY . .
 # 6. Run the bot
 CMD ["python", "main.py"]
 
-
-#run: docker build -t smart_discord_bot .
-#run: docker run --env-file .env smart_discord_bot
