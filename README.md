@@ -24,6 +24,8 @@ Ping the bot's usernane and start the conversation with it.
     1. docker build -t smart_discord_bot .
     2. docker run --env-file .env smart_discord_bot
 
+Or host it on any server with Dockerfile
+
 ## Future Update:
 - Summarize messages
 - Voice Chat
